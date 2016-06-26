@@ -12,17 +12,17 @@
 	font-style: normal;
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+/* .clearfix:before, .clearfix:after { content: " "; display: table; } */
+/* .clearfix:after { clear: both; } */
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #aaa;
-	background: #fff;
+	color: red;
+	font-style: italic;
+	background-color: #ccff66;
 }
 
 a {
@@ -32,7 +32,8 @@ a {
 
 .no-touch a:hover,
 .no-touch a:active {
-	color: #333;
+    background: black;
+	color: #99ffcc;
 }
 
 .container {
@@ -41,7 +42,7 @@ a {
 }
 
 .container > section {
-	min-height: 100%;
+	min-height: 50%;
 	margin: 0 auto;
 	padding: 20em 3em;
 }
@@ -193,33 +194,18 @@ a {
 	background: #eea303;
 }
 
-#set-3 {
-	background: #f06060;
-}
 
 #set-4 {
 	background: #0e83cd;
 }
-
-#set-5 {
-	background: #702fa8;
-}
-
 #set-6 {
 	background: #64bb5d;
-}
-
-#set-7 {
-	background: #d54f30;
 }
 
 #set-8 {
 	background: #3851bc;
 }
 
-#set-9 {
-	background: #96a94b;
-}
 
 @media screen and (max-width: 800px) {
 
@@ -239,4 +225,8 @@ a {
 		display: none;
 	}
 
+}
+
+header{
+    background-image: url("../images/graduation.jpg")
 }
