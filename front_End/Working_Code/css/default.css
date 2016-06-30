@@ -24,16 +24,8 @@ body {
     font-style: italic;
     background-color: #ccff66;
 }
-
-a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.no-touch a:hover,
-.no-touch a:active {
-    background: black;
-    color: #99ffcc;
+a .Heading{
+    color:green;
 }
 
 .container {
@@ -162,29 +154,23 @@ a {
     padding-top: 1em;
     font-size: 0.9em;
 }
-
-.touch .codrops-demos {
-    display: none;
-}
-
 .codrops-demos a {
     display: inline-block;
     margin: 0.5em;
     padding: 0.6em 1em;
-    border: 3px solid #ddd;
+    border: 3px solid black;
+    border-radius: 2px 20px;
     font-weight: 700;
+    background: #41ab6b;
+	
 }
 
 .codrops-demos a:hover {
-    opacity: 0.6;
+    border-radius: 20px 2px;
+    background: #eea303;
+
 }
 
-.codrops-demos a.current-demo,
-.codrops-demos a.current-demo:hover {
-    border: 3px solid #aaa;
-    opacity: 1;
-    color: #aaa;
-}
 
 #set-1 {
     background: #41ab6b;
@@ -225,8 +211,4 @@ a {
 	display: none;
     }
     
-}
-
-header{
-    background-image: url("../images/graduation.jpg")
 }
