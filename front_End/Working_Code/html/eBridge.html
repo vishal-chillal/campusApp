@@ -1,32 +1,53 @@
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Campus just Camp-Us</title>
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/jquery-3.0.0.min"></script>
     <script>
-      $(function(){
-      $("#header").load("header.html");
-      <!-- $("#footer").load("footer.html"); -->
-      });
-    </script> 
-    <link rel="shortcut icon" href="Apple.ico"/> 
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link rel="shortcut icon" href="Apple.ico" />
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
     <link rel="stylesheet" type="text/css" href="../css/component.css" />
     <script src="../js/modernizr.custom.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <!-- Top Navigation -->
-      <div id="header" class="container"> </div></br>
-    <div id="content">
-      Main Content
-    </div><br />
-    <script>
-      $("#header").load("header.html");
-    </script> 
-  </body>
-  
+        <!-- Top Navigation -->
+        <div id="header"></div>
+        <form action="demo_form.asp">
+            <div class="register">
+                <label id="lblForm">Regestration form</label>
+                <table title="Register Here">
+                    <tr>
+                        <td>
+                            <label id="lblName">FULL NAME :</label>
+                        </td>
+                        <td>
+                            <input id="fNmae" type="text" name="fName" placeholder="First Name" />
+                        </td>
+                        <td>
+                            <input id="mName" type="text" name="mName" placeholder="Middle Name" />
+                        </td>
+                        <td>
+                            <input id="lName" type="text" name="fName" placeholder="Last Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="lblAdd">ADDRESS :</label>
+                        </td>
+                    </tr>
+                </table>
 
-  
+                <button id="submit" style="border: 5px solid red">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="footer" class="Footer"></div>
+</body>
 </html>

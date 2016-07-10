@@ -1,121 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Campus just Camp-Us</title>
     <meta name="description" content="Simple App For Campus Purpose." />
     <meta name="keywords" content="campus, best institute, top 5 institute, comp sci" />
     <meta name="author" content="PUCSD" />
     <script src="../js/jquery-1.11.3.js"></script>
-    <script src="../js/jquery-3.0.0.min"></script>    
+    <script src="../js/jquery-3.0.0.min"></script>
     <script>
-      $(function(){
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-      });
-    </script> 
-    <link rel="shortcut icon" href="Apple.ico"/> 
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link rel="shortcut icon" href="Apple.ico" />
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
     <link rel="stylesheet" type="text/css" href="../css/component.css" />
-    <script src="../js/modernizr.custom.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <!-- Top Navigation -->
-      <div id="header" class="container"> </div></br>
-      <!-- <div class="codrops-top clearfix"> -->
-      <!-- 	<a class="codrops-icon codrops-icon-prev" href="http://www.w3school.com"><span>CSS support</span></a> -->
-      <!-- 	<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://www.google.com"><span>HomePage</span></a></span> -->
-      <!-- </div> -->
-      <!-- <header> -->
-      <!-- 	<h1>"Its The Campus"<span>Sample Master Page For The WebApp</span></h1>	 -->
-      <!-- 	<nav id="codrops-demos" class="codrops-demos"> -->
-      <!-- 	  <a href="#set-1"> Portal </a> -->
-      <!-- 	  <a href="#set-2"> TimeTables </a> -->
-      <!-- 	  <a href="#set-3"> Current Projects </a> -->
-      <!-- 	  <a href="#set-4"> Student Info </a> -->
-      <!-- 	  <a href="#set-5"> Teaching Staff </a> -->
-      <!-- 	  <a href="#set-6"> Study </a> -->
-      <!-- 	  <a href="html/eBridge.html"> eBridge </a> -->
-      <!-- 	</nav> -->
-      <!-- </header> -->
-      <section id="set-1">
-	<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-	  <a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>
-	  <a href="#set-1" class="hi-icon hi-icon-screen">Desktop</a>
-	</div>
-	<span> <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
-	    <a href="#set-1" class="hi-icon hi-icon-earth">Partners</a>
-	    <a href="#set-1" class="hi-icon hi-icon-support">Support</a>
-	    <a href="#set-1" class="hi-icon hi-icon-locked">Security</a>
-	</div></span>
-      </section>
-      <section id="set-2">
-	<div class="hi-icon-wrap hi-icon-effect-2 hi-icon-effect-2b">
-	  <a href="#set-2" class="hi-icon hi-icon-cog">Settings</a>
-	  <a href="#set-2" class="hi-icon hi-icon-clock">Time</a>
-	  <a href="#set-2" class="hi-icon hi-icon-videos">Videos</a>
-	  <a href="#set-2" class="hi-icon hi-icon-list">List</a>
-	  <a href="#set-2" class="hi-icon hi-icon-refresh">Refresh</a>
-	</div>
-      </section>
-      <section id="set-4">
-	<div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4a">
-	  <a href="#set-4" class="hi-icon hi-icon-archive">Archive</a>
-	  <a href="#set-4" class="hi-icon hi-icon-chat">Chat</a>
-	  <a href="#set-4" class="hi-icon hi-icon-bookmark">Bookmarks</a>
-	  <a href="#set-4" class="hi-icon hi-icon-user">User</a>
-	  <a href="#set-4" class="hi-icon hi-icon-contract">Contact</a>
-	</div>
-	<div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
-	  <a href="#set-4" class="hi-icon hi-icon-archive">Archive</a>
-	  <a href="#set-4" class="hi-icon hi-icon-chat">Chat</a>
-	  <a href="#set-4" class="hi-icon hi-icon-bookmark">Bookmarks</a>
-	  <a href="#set-4" class="hi-icon hi-icon-user">User</a>
-	  <a href="#set-4" class="hi-icon hi-icon-contract">Contact</a>
-	</div>
-	<p>Note that the dashed border on a round pseudo-element (border-radius: 50%) does not work in FF 21.0</p>
-      </section>
-      <section id="set-6">
-	<div class="hi-icon-wrap hi-icon-effect-6">
-	  <a href="#set-6" class="hi-icon hi-icon-cog">Settings</a>
-	  <a href="#set-6" class="hi-icon hi-icon-support">Support</a>
-	  <a href="#set-6" class="hi-icon hi-icon-star">Fav</a>
-	  <a href="#set-6" class="hi-icon hi-icon-contract">Contract</a>
-	  <a href="#set-6" class="hi-icon hi-icon-refresh">Refresh</a>
-	</div>
-      </section>
-      <section id="set-8">
-	<div class="hi-icon-wrap hi-icon-effect-8">
-	  <a href="#set-8" class="hi-icon hi-icon-archive">Archive</a>
-	  <a href="#set-8" class="hi-icon hi-icon-chat">Chat</a>
-	  <a href="#set-8" class="hi-icon hi-icon-bookmark">Bookmarks</a>
-	  <a href="#set-8" class="hi-icon hi-icon-user">User</a>
-	  <a href="#set-8" class="hi-icon hi-icon-contract">Contact</a>
-	</div>
-      </section>
-    </div><!-- /container -->
-    <script>
-      var hash = window.location.hash,
-      current = 0,
-      demos = Array.prototype.slice.call( document.querySelectorAll( '#codrops-demos > a' ) );
-      
-      if( hash === '' ) hash = '#set-1';
-      setDemo( demos[ parseInt( hash.match(/#set-(\d+)/)[1] ) - 1 ] );
-      
-      demos.forEach( function( el, i ) {
-      el.addEventListener( 'click', function() { setDemo( this ); } );
-      } );
-      
-      function setDemo( el ) {
-      var idx = demos.indexOf( el );
-      if( current !== idx ) {
-      var currentDemo = demos[ current ];
-      currentDemo.className = currentDemo.className.replace(new RegExp("(^|\\s+)" + 'current-demo' + "(\\s+|$)"), ' ');
-      }
-      current = idx;
-      el.className = 'current-demo'; 
-      }
-    </script>
-  </body>
+        <!-- Top Navigation -->
+        <!-- <div id="header" class="container"></div> -->
+        <!-- </br> -->
+
+        <div class="codrops-top clearfix">
+          <a class="codrops-icon codrops-icon-prev" href="http://www.w3school.com"><span>CSS support</span></a>
+          <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://www.google.com"><span>HomePage</span></a></span>
+        </div>
+        <header>
+          <h1>"Its The Campus"<span>Sample Master Page For The WebApp</span></h1>
+          <nav id="codrops-demos" class="codrops-demos">
+            <a href="#set-1"> Portal </a>
+            <a href="#set-2"> TimeTables </a>
+            <a href="#set-3"> Current Projects </a>
+            <a href="#set-4"> Student Info </a>
+            <a href="#set-5"> Teaching Staff </a>
+            <a href="#set-6"> Study </a>
+            <a href="html/eBridge.html"> eBridge </a>
+          </nav>
+        </header>
+        <section id="set-1">
+          <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+            <a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>
+            <a href="#set-1" class="hi-icon hi-icon-screen">Desktop</a>
+          </div>
+          <span> <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
+              <a href="#set-1" class="hi-icon hi-icon-earth">Partners</a>
+              <a href="#set-1" class="hi-icon hi-icon-support">Support</a>
+              <a href="#set-1" class="hi-icon hi-icon-locked">Security</a>
+          </div></span>
+        </section>
+        <section id="set-2">
+          <div class="hi-icon-wrap hi-icon-effect-2 hi-icon-effect-2b">
+            <a href="#set-2" class="hi-icon hi-icon-cog">Settings</a>
+            <a href="#set-2" class="hi-icon hi-icon-clock">Time</a>
+            <a href="#set-2" class="hi-icon hi-icon-videos">Videos</a>
+            <a href="#set-2" class="hi-icon hi-icon-list">List</a>
+            <a href="#set-2" class="hi-icon hi-icon-refresh">Refresh</a>
+          </div>
+        </section>
+        <section id="set-4">
+          <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4a">
+            <a href="#set-4" class="hi-icon hi-icon-archive">Archive</a>
+            <a href="#set-4" class="hi-icon hi-icon-chat">Chat</a>
+            <a href="#set-4" class="hi-icon hi-icon-bookmark">Bookmarks</a>
+            <a href="#set-4" class="hi-icon hi-icon-user">User</a>
+            <a href="#set-4" class="hi-icon hi-icon-contract">Contact</a>
+          </div>
+          <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+            <a href="#set-4" class="hi-icon hi-icon-archive">Archive</a>
+            <a href="#set-4" class="hi-icon hi-icon-chat">Chat</a>
+            <a href="#set-4" class="hi-icon hi-icon-bookmark">Bookmarks</a>
+            <a href="#set-4" class="hi-icon hi-icon-user">User</a>
+            <a href="#set-4" class="hi-icon hi-icon-contract">Contact</a>
+          </div>
+          <p>Note that the dashed border on a round pseudo-element (border-radius: 50%) does not work in FF 21.0</p>
+        </section>
+        <section id="set-6">
+          <div class="hi-icon-wrap hi-icon-effect-6">
+            <a href="#set-6" class="hi-icon hi-icon-cog">Settings</a>
+            <a href="#set-6" class="hi-icon hi-icon-support">Support</a>
+            <a href="#set-6" class="hi-icon hi-icon-star">Fav</a>
+            <a href="#set-6" class="hi-icon hi-icon-contract">Contract</a>
+            <a href="#set-6" class="hi-icon hi-icon-refresh">Refresh</a>
+          </div>
+        </section>
+        <section id="set-8">
+          <div class="hi-icon-wrap hi-icon-effect-8">
+            <a href="#set-8" class="hi-icon hi-icon-archive">Archive</a>
+            <a href="#set-8" class="hi-icon hi-icon-chat">Chat</a>
+            <a href="#set-8" class="hi-icon hi-icon-bookmark">Bookmarks</a>
+            <a href="#set-8" class="hi-icon hi-icon-user">User</a>
+            <a href="#set-8" class="hi-icon hi-icon-contract">Contact</a>
+          </div>
+        </section>
+    </div>
+    <!-- /container -->
+    <div id="footer" class="Footer"></div>
+    </b>
+</body>
 </html>
