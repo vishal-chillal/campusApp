@@ -2,18 +2,7 @@
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: red;
     font-style: italic;
-    background-color: lightcyan;
-}
-
-.Footer {
-    bottom: 0;
-    color: black;
-    background-color: lightcyan;
-    z-index: 999999;
-    text-align: center;
-    padding: 0.1em 0.5em;
-    scrollbar-darkshadow-color: aqua;
-    position: fixed;
+    background-color: #eef;
 }
 
 .container {
@@ -21,125 +10,137 @@
     top: 5px;
     left: 0px;
 }
-    /*header style and coloring*/
-    .container header {
-        margin: 0 auto;
-        padding: 0.1em 0.1em;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        background-color: #fff;
-        background-image: url("../extras/graduation.jpg");
-        /*        background-size: contain;
-*/ z-index: 999999;
-        color: #f3231c;
-    }
-    /*section between the header and footer*/
-    .container form {
-        min-height: 50%;
-        margin: 0 auto;
-        padding: 14em 3em;
-        position: inherit;
-        color: black;
-        text-align: center;
-    }
-
-        .container form h3 {
-            font-family: 'Bookshelf Symbol 7';
-            text-decoration: underline;
-            font-size: x-large;
-        }
-
-/* To Navigation Style */
-
-.codrops-top {
-    background: rgba(255, 255, 255, 0.6);
-    text-transform: uppercase;
-    width: 100%;
-    font-size: 0.69em;
-    line-height: 2.2;
+/*header style and coloring*/
+.container .Header {
+    padding: 0.1em 0.1em;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999999;
+    text-align: center;
+    background-image: url("../extras/graduation.jpg");
+    z-index: 999999;
+    border:solid 2px red;
+}
+.container .Footer {
+    bottom: 0;
+    left: 0;
+    color: black;
+    width:100%;
+    background-color: cyan;
+    z-index: 999999;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    position: fixed;
+}
+/*section between the header and footer*/
+.container .register,.container .logIn {
+    min-height: 50%;
+    margin: 0 auto;
+    padding: 13em 3em;
+    position: inherit;
+    color: black;
+    text-align: center;
+}
+.container .register td{
+    padding:1em;
 }
 
-    .codrops-top a {
-        padding: 0 1em;
-        letter-spacing: 0.1em;
-        display: inline-block;
-    }
 
-        .codrops-top a:hover {
-            background: rgba(255,255,255,0.95);
-            color: #777;
-        }
-
-    .codrops-top span.right {
-        float: right;
-    }
-
-        .codrops-top span.right a {
-            float: left;
-            display: block;
-        }
-
-.codrops-icon:before {
-    font-family: 'codropsicons';
-    margin: 0 4px;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+.container .register h3 {
+    font-family: 'Bookshelf Symbol 7';
+    text-decoration: underline;
+    font-size: x-large;
 }
-
-/* Demo Buttons Style */
-.codrops-demos {
-    padding-top: 0.5em;
-    padding-bottom: 2em;
-    font-size: 0.9em;
 }
+ /* To Navigation Style */
 
-    .codrops-demos > a {
-        display: inline-block;
-        color: #0c4e07;
-        text-decoration: none;
-        margin: 0.5em;
-        padding: 0.6em 2em;
-        border: 2px solid black;
-        border-radius: 2px 60px;
-        font-weight: 700;
-        background: #41ab6b;
-    }
+ .codrops-top {
+     background: rgba(255, 255, 255, 0.6);
+     text-transform: uppercase;
+     width: 100%;
+     font-size: 0.69em;
+     line-height: 2.2;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 9999999;
+ }
 
-        .codrops-demos > a:hover {
-            color: red;
-            border-radius: 60px 2px;
-            background: #eea303;
-            transition: background 0.9s, color 0.9s;
-        }
+ .codrops-top a {
+     padding: 0 1em;
+     letter-spacing: 0.1em;
+     display: inline-block;
+ }
 
-#set-1 {
-    background: #41ab6b;
-}
+ .codrops-top a:hover {
+     background: rgba(255,255,255,0.95);
+     color: #777;
+ }
 
-#set-2 {
-    background: #eea303;
-}
+ .codrops-top span.right {
+     float: right;
+ }
 
-#set-4 {
-    background: #0e83cd;
-}
+ .codrops-top span.right a {
+     float: left;
+     display: block;
+ }
 
-#set-6 {
-    background: #64bb5d;
-}
+ .codrops-icon:before {
+     font-family: 'codropsicons';
+     margin: 0 4px;
+     speak: none;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
+ }
 
-#set-8 {
-    background: #3851bc;
-}
+ /* Demo Buttons Style */
+ .codrops-demos {
+     padding-top: 0.5em;
+     padding-bottom: 2em;
+     font-size: 0.9em;
+ }
+
+ .codrops-demos > a {
+     display: inline-block;
+     color: #0c4e07;
+     text-decoration: none;
+     margin: 0.5em;
+     padding: 0.6em 2em;
+     border: 2px solid black;
+     border-radius: 2px 60px;
+     font-weight: 700;
+     background: #41ab6b;
+ }
+
+ .codrops-demos > a:hover {
+     color: red;
+     border-radius: 60px 2px;
+     background: #eea303;
+     transition: background 0.9s, color 0.9s;
+ }
+
+ #set-1 {
+     background: #41ab6b;
+ }
+
+ #set-2 {
+     background: #eea303;
+ }
+
+ #set-4 {
+     background: #0e83cd;
+ }
+
+ #set-6 {
+     background: #64bb5d;
+ }
+
+ #set-8 {
+     background: #3851bc;
+ }
