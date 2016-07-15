@@ -81,11 +81,11 @@
             <br />
             <br />
             <input id="Reset1" class="button" type="reset" value="Reset" style="float: inherit" />
-            <input id="Submit" class="button" type="submit" value="submit" style="float: inherit" />
+            <input id="Submit" class="button" type="button" value="submit" style="float: inherit" onclick="selectUsrName()" />
 	    <input id="temp" class="button" value="temp" type="button" style="float: inherit" onclick="selectUsrName()" />
           </fieldset>
         </div>
-        <div id="logIn" class="logIn" style="visibility: hidden">
+        <div id="logIn" class="signIn logIn" style="visibility: hidden">
           <fieldset>
             <legend>
               <h3 id="H1">Login here</h3>
@@ -108,7 +108,7 @@
                 </td>
               </tr>
             </table>
-            <input id="btnSignIn" class="button" type="submit" value="Signin" style="float: inherit" />
+            <a id="btnSignIn" href="login_UI.html" class="button" type="button" text="Signin" style="float: inherit" onclick="newDoc1">SignIn</a>
             <input id="Reset2" class="button" type="reset" value="Reset" style="float: inherit" />
           </fieldset>
         </div>
@@ -128,7 +128,7 @@
                   <input id="txtUser" type="text" placeholder="UserName" title="Enter UserName" required="required" />
                 </td>
 		<td>
-		  <input id="btnUsr" type="submit" value="Check Available" style="float: inherit" />
+		  <input id="btnUsr" type="button" value="Check Available" style="float: inherit" />
 		</td>
               </tr>
               <tr>
@@ -143,7 +143,7 @@
                 </td>
               </tr>
             </table>
-            <input id="btnConfirm" class="button" type="submit" value="Confirm" style="float: inherit" />
+            <input id="btnConfirm" class="button" type="button" value="Confirm" onclick="login()" style="float: inherit" />
             <input id="Reset3" class="button" type="reset" value="Reset" style="float: inherit" />
           </fieldset>
         </div>
