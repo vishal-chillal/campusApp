@@ -25,9 +25,9 @@
 
 /*header style and coloring*/
 .container .Header {
-    padding: 0.1em 0.1em;
+    padding: 0.1em 0.1em -10px;
     position: fixed;
-    top: 0;
+    top: -20px;
     left: 0;
     width: 100%;
     background-image: url("../extras/graduation.jpg");
