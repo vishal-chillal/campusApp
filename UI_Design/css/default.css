@@ -4,16 +4,12 @@
     font-style: italic;
     background-color: lightcyan;
 }
-
-.Footer {
-    bottom: 0;
+.menuBtn{
+    position:fixed;
     color: black;
-    background-color: lightcyan;
-    z-index: 999999;
-    text-align: center;
-    padding: 0.1em 0.5em;
-    scrollbar-darkshadow-color: aqua;
-    position: fixed;
+    top:0;
+    z-index: 9999;
+    left:0;
 }
 
 .container {
@@ -31,7 +27,8 @@
     left: 0;
     width: 100%;
     background-image: url("../extras/graduation.jpg");
-    z-index: 999999;
+    visibility:hidden;
+    z-index: 99999;
     color: #f3231c;
 }
 /*footer style and colouring*/
