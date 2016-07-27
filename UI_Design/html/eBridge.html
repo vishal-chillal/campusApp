@@ -7,7 +7,6 @@
     <script src="../js/jquery-3.0.0.min"></script>
     <script src="../js/myScript.js"></script>
     <link rel="shortcut icon" href="../extras/Apple.ico" />
-
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
   </head>
   <body>
@@ -15,96 +14,9 @@
       <!-- Top Navigation -->
       <header id="header"></header>
       <form action="demo_form.asp">
-        <div class="session">
-          <input class="button" id="btnLogIn" type="button" value="LogIn" onclick="login()" />
-          <input class="button" id="btnRegister" type="button" value="Register" onclick="register()" />
-        </div>
-        <div class="register" id="register" style="visibility: visible">
-          <fieldset>
-            <legend>
-              <h3 id="lblForm">Regestration form</h3>
-            </legend>
-            <table style="width: 100%">
-              <tr>
-                <td>
-                  <label id="lblName">FULL NAME :</label>
-                </td>
-                <td>
-                  <input id="fNmae" type="text" name="fName" placeholder="First Name" required="required" title="Enter Name" />
-                </td>
-                <td>
-                  <input id="mName" type="text" name="mName" placeholder="Middle Name" title="Enter Middle Name" />
-                </td>
-                <td>
-                  <input id="lName" type="text" name="fName" placeholder="Last Name" required="required" title="Enter Last Name" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label id="lblAdd">ADDRESS :</label>
-                </td>
-                <td colspan="2">
-                  <textarea id="TextArea1" cols="70" rows="2" name="add" placeholder="Address" title="Enter Your Adddress"></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="500">
-                  <hr />
-                  <label id="lblContact" style="text-decoration-style: solid">Contact Info</label>
-                  <hr />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label id="lblEmail">Email ID :</label>
-                </td>
-                <td>
-                  <input id="eMail" type="text" name="EmailID" placeholder="Email-ID" title="Enter Email Id" required="required" />
-                </td>
-                <td>
-                  <label id="mob">Mobile :</label>
-                </td>
-                <td>
-                  <input id="Mobile" type="text" name="MobileNo" placeholder="Mob No" title="Enter Mobile Number" required="required" />
-                </td>
-              </tr>
-            </table>
-            <br />
-            <br />
-            <input id="Reset1" class="button" type="reset" value="Reset" style="float: inherit" />
-            <input id="Submit" class="button" type="button" value="submit" style="float: inherit" onclick="selectUsrName()" />
-	    <input id="temp" class="button" value="temp" type="button" style="float: inherit" onclick="selectUsrName()" />
-          </fieldset>
-        </div>
-        <div id="logIn" class="signIn logIn" style="visibility: hidden">
-          <fieldset>
-            <legend>
-              <h3 id="H1">Login here</h3>
-            </legend>
-            <table style="width: 40%">
-              <tr>
-                <td>
-                  <label id="lblUsrName" title="UserName">UserName :</label>
-                </td>
-                <td>
-                  <input id="txtUsrName" type="text" placeholder="UserName" title="Enter UserName" required="required" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label id="lblPasswd">PassWord :</label>
-                </td>
-                <td>
-                  <input id="txtPasswd" type="text" placeholder="Password" required="required" title="Enter Password" />
-                </td>
-              </tr>
-            </table>
-            <a id="btnSignIn" href="login_UI.html" class="button" type="button" text="Signin" style="float: inherit" onclick="newDoc1">SignIn</a>
-            <input id="Reset2" class="button" type="reset" value="Reset" style="float: inherit" />
-          </fieldset>
-        </div>
-
-
+        <div id="logIn" class="signIn logIn">
+	  enter the login code here
+	</div>	
 	<div id="slctUsr" class="selectUsername logIn" style="visibility: hidden">
           <fieldset>
             <legend>

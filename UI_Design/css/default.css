@@ -1,15 +1,24 @@
-﻿body {
+﻿html{
+    background: url(../extras/bg1.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: red;
     font-style: italic;
-    background-color: lightcyan;
+    #background-color: lightcyan;
 }
-.menuBtn{
+.menuBtn {
     position:fixed;
     color: black;
     top:0;
     z-index: 9999;
     left:0;
+    display:inline;
 }
 
 .container {
@@ -26,8 +35,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url("../extras/graduation.jpg");
-    visibility:hidden;
+    background-image: url("../extras/graduation-caps.jpg");
+    visibility:visible;
     z-index: 99999;
     color: #f3231c;
 }
@@ -35,6 +44,7 @@
 .container .Footer {
     bottom: 0;
     left: 0;
+    top:100rem;
     width: 100%;
     color: black;
     background-color: cyan;
@@ -47,7 +57,7 @@
 /*section between the header and footer*/
 .container .register {
     /*min-height: 50%;*/
-    padding: 15em 3em;
+    padding: 7em 3em;
     position: relative;
     width: 90%;
     color: black;
@@ -57,7 +67,7 @@
     /*padding: 5em;*/
     position: fixed;
     color: black;
-    top: 16em;
+    top: 15em;
     width: 90%;
     padding: 0em 3em;
 }
@@ -138,7 +148,7 @@
 /* Demo Buttons Style */
 .codrops-demos {
     padding-top: 0.5em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     font-size: 0.9em;
 }
 
@@ -146,9 +156,9 @@
     display: inline-block;
     color: #0c4e07;
     text-decoration: none;
-    margin: 0.5em;
-    padding: 0.6em 2em;
-    border: 2px solid black;
+    margin: 0.2em;
+    padding: 0.5em 2em;
+    border: 2px solid green;
     border-radius: 2px 60px;
     font-weight: 700;
     background: #41ab6b;
@@ -156,6 +166,7 @@
 
 .codrops-demos > a:hover,.button:hover  {
     color: red;
+    border: 2px solid red;
     border-radius: 60px 2px;
     background: #eea303;
     transition: background 0.9s, color 0.9s;
