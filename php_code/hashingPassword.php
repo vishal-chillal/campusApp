@@ -1,4 +1,5 @@
 <?php 
+	#METHOD 1:
 	#encryptPass is used to encrypt user entered password.
 	function encryptPass($userEnteredPass){
 		return password_hash($userEnteredPass, PASSWORD_BCRYPT);
@@ -14,6 +15,7 @@
 		}
 	}
 
+	#METHOD 2:
 	#More secure way to store password but in this we have to store salt and secret key for each user in db
 	#function for encrypting password
 	function getSecureHashing($userEnteredPass){
@@ -25,7 +27,7 @@
 		return $encryptedPassword;
 	}
 
-	#function for decrypting password
+	#function for decrypting password. checks if user entered pass and db pass is matched
 	function verifySecureHashing($userEnteredPass,$encryptedPassFromDB){
 		$salt = '12061994'; #this will be retrieved from db
 		$iterations = 20000;
@@ -40,7 +42,8 @@
 		}
 	}
 
-	$userEnteredPass = "harshal";
-	$encryptedPassFromDB = getSecureHashing("harshal");
-	echo verifySecureHashing($userEnteredPass,$encryptedPassFromDB);
+	#Example for understanding
+	$userEnteredPass = "harshal"; #this is password which will be retrieved from user 
+	$encryptedPassFromDB = getSecureHashing("harshal"); #this is encrypted password stored in db.
+	echo verifySecureHashing($userEnteredPass,$encryptedPassFromDB); #function call to verify password
 ?>
