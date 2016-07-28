@@ -14,43 +14,40 @@
       <!-- Top Navigation -->
       <header id="header"></header>
       <form action="demo_form.asp">
-        <div id="logIn" class="signIn logIn">
-	  enter the login code here
-	</div>	
-	<div id="slctUsr" class="selectUsername logIn" style="visibility: hidden">
+	<div id="login" class="logIn" style="visibility: visible">
           <fieldset>
             <legend>
-              <h3 id="H1">Select UserName Password</h3>
+              <h3 id="H1">Enter UserName & Password</h3>
             </legend>
-            <table style="width: 40%">
-              <tr>
-                <td>
-                  <label id="lblUser" title="UserName">UserName :</label>
-                </td>
-                <td>
-                  <input id="txtUser" type="text" placeholder="UserName" title="Enter UserName" required="required" />
-                </td>
-		<td>
-		  <input id="btnUsr" type="button" value="Check Available" style="float: inherit" />
-		</td>
-              </tr>
-              <tr>
-                <td>
-                  <label id="lblPassword">PassWord :</label>
-                </td>
-                <td>
-                  <input id="txtPassword" type="text" placeholder="Password" required="required" title="Enter Password" />
-                </td>
-                <td>
-                  <input id="txtConfrmPassword" type="text" placeholder="ConfirmPassword" required="required" title="Enter COnfirm Password" />
-                </td>
-              </tr>
-            </table>
+	    <div class="abc">
+              <table style="width: 40%">
+		<tr>
+                  <td>
+		    <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+		      <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+		    </svg>
+		  </td>
+		  <td>
+                    <input id="txtUser" type="text" placeholder="UserName" title="Enter UserName" required="required" />
+                  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+		      <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+		    </svg>
+		    
+		  </td>
+                  <td>
+                    <input id="txtPassword" type="text" placeholder="Password" required="required" title="Enter Password" />
+                  </td>
+		</tr>
+              </table>
+	    </div>
             <input id="btnConfirm" class="button" type="button" value="Confirm" onclick="login()" style="float: inherit" />
             <input id="Reset3" class="button" type="reset" value="Reset" style="float: inherit" />
           </fieldset>
         </div>
-
       </form>
     </div>
   </body>
