@@ -10,7 +10,6 @@ body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: red;
     font-style: italic;
-    #background-color: lightcyan;
 }
 .menuBtn {
     position:fixed;
@@ -83,8 +82,11 @@ body {
 }
 input{
     display: inline-block;
-    background-color: rgba(0,0,0,0);/* 4CAF40; */ /* Green */    
-    border-radius: 5px;
+    background-color: rgba(0,0,0,0);/* 4CAF40; */ /* Green */
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    /* border-radius: 5px; */
     margin:1rem 2rem;
     padding:0.5rem;
 }
@@ -222,16 +224,16 @@ svg {
     stroke-width: 1;
 }
 
-.login__icon path {
+.login__icon.name path {
     stroke-dasharray: 73.50196075439453;
     stroke-dashoffset: 73.50196075439453;
-    -webkit-animation: animatePath 2s 0.5s forwards;
+    -webkit-animation: animatePath 5s 0.5s forwards;
     animation: animatePath 5s 0.5s forwards;
 }
 .login__icon.pass path {
     stroke-dasharray: 92.10662841796875;
     stroke-dashoffset: 92.10662841796875;
-    -webkit-animation: animatePath 2s 0.5s forwards;
+    -webkit-animation: animatePath 5s 0.5s forwards;
     animation: animatePath 5s 0.5s forwards;
 }
 @-webkit-keyframes animatePath {

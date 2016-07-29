@@ -1,7 +1,6 @@
 ﻿
 $(function () {
     $("#header").load("header.html");
-    $("#footer").load("footer.html");
     $('#textPara').load("../extras/content.txt");
 });
 function register() {
