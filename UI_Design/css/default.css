@@ -179,12 +179,16 @@ input{
     border-radius: 6px;
     background: white;
     transition: background 0.9s, color 1s;
+    
 }
 .codrops-demos > a:hover  {
     color: red;
     border: 2px solid red;
     border-radius: 60px 2px;
     background: #eea303;
+    -webkit-transition: background 0.9s, color 0.9s;
+    -o-transition: background 0.9s, color 0.9s;
+    -moz-transition: background 0.9s, color 0.9s;
     transition: background 0.9s, color 0.9s;
 }
 
